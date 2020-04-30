@@ -4,3 +4,6 @@
 [submodule "cyri-gs"]
 	path = cyri-gs
 	url = https://github.com/MastanShaik30/cyri-gs.git
+[submodule "cyri-blms"]
+	path = cyri-blms
+	url = https://github.com/MastanShaik30/cyri-blms.git
