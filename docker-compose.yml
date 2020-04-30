@@ -1,0 +1,21 @@
+version: '3'
+services: 
+  backend_nodejs_yt: 
+    build: ./cyri-blms
+    command:mvn clean package
+    #volumes: 
+     # - "./backend:/usr/src/app"
+    ports:
+      - "8080:8080"
+    networks:
+      - fervor
+  frontend_reactjs_yt:
+    build: ./frontend
+    ports: 
+      - "82:80"
+    networks: 
+      - fervor
+
+networks:
+  fervor:
+    driver: bridge
