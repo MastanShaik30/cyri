@@ -1,21 +1,31 @@
-version: '3'
+#Docker compose file Reference (https://docs.docker.com/compose/compose-file/)
+version: '3.7'
+
+#Define Services
 services: 
-  backend_nodejs_yt: 
-    build: ./cyri-blms
-    command:mvn clean package
-    #volumes: 
-     # - "./backend:/usr/src/app"
+  #App backend Service
+  app-businesslogic: 
+    build: 
+      context: cyri-blms
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    networks:
-      - fervor
-  frontend_reactjs_yt:
-    build: ./frontend
-    ports: 
-      - "82:80"
+    restart: always
     networks: 
       - fervor
+  app-gameservice:
+    build: 
+      context: cyri-gs
+      dockerfile: Dockerfile
+    ports: 
+      - "8081:8080"
+    restart: always
+    networks: 
+      - fervor
+      
+#volumes
+#volumes:
+  #db-data: 
 
 networks:
-  fervor:
-    driver: bridge
+  fervor: 
