@@ -42,6 +42,7 @@ services:
     depends_on:
       - app-businesslogic
       - app-gameservice
+      - app-phoneservice
     networks:
       - fervor 
       
