@@ -7,3 +7,6 @@
 [submodule "cyri-blms"]
 	path = cyri-blms
 	url = https://github.com/MastanShaik30/cyri-blms.git
+[submodule "cyri-ps"]
+	path = cyri-ps
+	url = https://github.com/MastanShaik30/cyri-ps.git
