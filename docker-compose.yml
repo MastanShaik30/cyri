@@ -22,6 +22,15 @@ services:
     restart: always
     networks: 
       - fervor
+  app-phoneservice:
+    build: 
+      context: cyri-ps
+      dockerfile: Dockerfile
+    ports: 
+      - "8082:8080"
+    restart: always
+    networks: 
+      - fervor
   #frontend service
   app-reactfrontend:
     build:
