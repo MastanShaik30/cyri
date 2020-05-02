@@ -64,15 +64,15 @@ Below are the steps how to build and run each microservice using Docker
 
 1) Enter into the submodule directory:
 
-  Eg: cd cyri-blms
+              Eg: cd cyri-blms
   
 2) Now build the docker image using Dockerfile.
 
-    docker build -t <image_name_as_per_your_choice> .
+              docker build -t <image_name_as_per_your_choice> .
     
 3) Now run the docker image using below command.
 
-    docker run -p 8080:8080 <image_name_mentioned_in_the_above_build_command>
+              docker run -p 8080:8080 <image_name_mentioned_in_the_above_build_command>
     
 4) Here -p denotes the port on which docker container is running. In the above example 8080:8080 means
    - The first 8080 is the port on which docker container is running
