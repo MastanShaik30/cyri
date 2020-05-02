@@ -1,17 +1,29 @@
 # cyri
 This is a dockerized full stack application with:
+
 React application as front end
+
 Spring boot microservices as back end
 
 In order to run the application in your local system
+
 Prerequisities:
-Windows : https://docs.docker.com/docker-for-windows/install/
-Mac: https://docs.docker.com/docker-for-mac/install/
-Linux : https://docs.docker.com/engine/install/
+
+Git Installation : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Docker Windows : https://docs.docker.com/docker-for-windows/install/
+
+Docker Mac: https://docs.docker.com/docker-for-mac/install/
+
+Docker Linux : https://docs.docker.com/engine/install/
 
 Once you have docker set up in your local
 
-Run the below commands:
+Choose a folder where you want to download and open a bash terminal (if windows try using cmder or conemu softwares).
+
+cd into the directory where you want to download the github project.
+
+To download and run the project,run the below commands:
 
 1) git clone https://github.com/MastanShaik30/cyri.git
 
