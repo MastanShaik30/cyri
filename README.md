@@ -9,13 +9,13 @@ In order to run the application in your local system
 
 Prerequisities:
 
-Git Installation : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- Git Installation : https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
-Docker Windows : https://docs.docker.com/docker-for-windows/install/
+- Docker Windows : https://docs.docker.com/docker-for-windows/install/
 
-Docker Mac: https://docs.docker.com/docker-for-mac/install/
+- Docker Mac: https://docs.docker.com/docker-for-mac/install/
 
-Docker Linux : https://docs.docker.com/engine/install/
+- Docker Linux : https://docs.docker.com/engine/install/
 
 Once you have docker set up in your local
 
@@ -34,6 +34,16 @@ To download and run the project,run the below commands:
 4) git submodule update # to clone the submodule project into your local system
 
 5) once you have downloaded the submodule you can run the project using docker
+
+
+If it's a windows system, Please run the below extra steps to make sure docker compose works
+
+    - cd into the submodules of spring boot applications (cyri-blms,cyri-gs).
+    
+    - In each submodules run the following command
+    
+                 dos2unix mvnw
+    
 
 6) To run all the microservices and react ui, run the following docker command
 
