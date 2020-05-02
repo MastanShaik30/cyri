@@ -27,15 +27,17 @@ To download and run the project,run the below commands:
 
 1) git clone https://github.com/MastanShaik30/cyri.git
 
-2) cd cyri
+2) Enter into the main root directory of project 
+
+              cd cyri
 
 3) To initialize the submodules in the main project cyri
 
-     git submodule init
+              git submodule init
 
 4) To clone the submodule project into your local system
 
-     git submodule update
+              git submodule update
 
 5) once you have downloaded the submodule you can run the project using docker
 
