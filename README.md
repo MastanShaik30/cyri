@@ -44,7 +44,7 @@ Below are the steps how to build and run each microservice using Docker
     
 3) Now run the docker image using below command.
 
-    docker run -it -p 8080:8080 <image_name_mentioned_in_the_above_build_command>
+    docker run -p 8080:8080 <image_name_mentioned_in_the_above_build_command>
     
 4) Here -p denotes the port on which docker container is running. In the above example 8080:8080 means
    - The first 8080 is the port on which docker container is running
